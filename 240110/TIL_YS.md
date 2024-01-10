@@ -123,9 +123,11 @@ public List<MemberTeamDto> search(MemberSearchCondition condition){
 ```
 
 `compileQuerydsl` 빌드를 통해 Q클래스를 생성합니다.
+
 Q클래스를 활용해 Java 코드와 유사한 방식으로 쿼리를 작성할 수 있습니다.
 
 Where절 파라미터를 활용한 방식입니다.
+
 @QueryProjection 방식과 BooleanBuilder를 사용한 방식도 있지만 위 방식을 더 사용 선호한다고 합니다. 
 
 대부분의 SQL문법은 Querydsl에서 매우 비슷하게 작성 가능합니다.
