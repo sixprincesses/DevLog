@@ -28,3 +28,7 @@ JPA에서 양방향으로 연결된 Entity를 그대로 조회하는 경우, 서
 - 양방향 매핑을 단방향 매핑으로 전환
 
 ### [SpringBoot] ImageServer 구성
+
+1. AWS S3 Cloud Storage
+
+2. Local Storage
