@@ -10,7 +10,6 @@
 
 JPA에서 양방향으로 연결된 Entity를 그대로 조회하는 경우, 서로의 정보를 순환하면서 조회하다가 StackOverflow가 발생
 
-
 > 순환 참조 해결방법
 
 1. @JsonIgnore 
