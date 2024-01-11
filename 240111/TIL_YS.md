@@ -2,6 +2,7 @@
 
 ## 1. 회원가입/로그인 서비스 플로우
 
+![FlowChart-로그인-토큰발급 drawio](https://github.com/sixprincesses/DevLog/assets/116432941/3628f9df-eb38-4a4c-a5cb-26ef6f138586)
 
 
 ## 2. 스프링 데이터 JPA
