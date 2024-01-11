@@ -6,9 +6,18 @@
         - Contents 데이터만 필요
 
 ## 해결 방안
-`List<startTime, endTime>`
+```java
+List<List<String>> timeTable = new ArrayList<>();
+List<String> subTime = new ArrayList<>();
+subTime.add({startTime});
+subTime.add({endTime});
+timeTable.add(subTime);
+```
+
 startTime null 불가능
+
 endTime null 가능
+
 다음 startTime 들어오면 이전 endTime Update
 
 ## 해결해야 할 것
