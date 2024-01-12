@@ -38,9 +38,9 @@ docker run -d --name redis-container \
 -e TZ=Asia/Seoul \
 redis
 ```
-`docker run -d --name redis-container \` : 컨테이너 생성 (-d background 실행)
-`--restart=on-failure \` : 구동 실패시 재구동
-`-p 6379:6379 \` : 포트지정 (왼쪽: Local Port/ 오른쪽: 컨테이너 내 포트)
-`-v redis-volume:/data \` : 해당 컨테이너의 저장공간 (업데이트 해도 유지)
-`-e TZ=Asia/Seoul \` : 시간 조정
-`redis` : 컨테이너 명
+- `docker run -d --name redis-container \` : 컨테이너 생성 (-d background 실행)
+- `--restart=on-failure \` : 구동 실패시 재구동
+- `-p 6379:6379 \` : 포트지정 (왼쪽: Local Port/ 오른쪽: 컨테이너 내 포트)
+- `-v redis-volume:/data \` : 해당 컨테이너의 저장공간 (업데이트 해도 유지)
+- `-e TZ=Asia/Seoul \` : 시간 조정
+- `redis` : 컨테이너 명
