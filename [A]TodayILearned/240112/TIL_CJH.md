@@ -11,3 +11,6 @@
     - FE - BE - SERVER
     - Frontend에게 Key만 전달
     - Frontend에서 S3에 직접 GET으로 파일 받음
+
+### [REDIS] Jedis and Lettuce
+- Redis를 Java에서 사용하기 위한 클라이언트 라이브러리
