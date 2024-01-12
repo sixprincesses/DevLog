@@ -30,5 +30,9 @@ JPA에서 양방향으로 연결된 Entity를 그대로 조회하는 경우, 서
 ### [SpringBoot] ImageServer 구성
 
 1. AWS S3 Cloud Storage
+    - File Upload
+    - File Download
 
 2. Local Storage
+    - File Upload
+    - File Download
