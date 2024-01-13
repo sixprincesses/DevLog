@@ -44,3 +44,6 @@ redis
 - `-v redis-volume:/data \` : 해당 컨테이너의 저장공간 (업데이트 해도 유지)
 - `-e TZ=Asia/Seoul \` : 시간 조정
 - `redis` : 이미지 명
+
+Reference
+- https://main--dev-kimsei.netlify.app/infra/ubuntu/install-redis-with-docker/
