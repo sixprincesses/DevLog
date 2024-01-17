@@ -6,18 +6,16 @@
 - 하나의 길을 계속해서 이용하는 방식
 
 ### SpringWebSocket
+- registerStompEndpoints
+  - 웹소켓 엔드포인트를 `url:port/channel`로 정의
+  - CORS 설정 가능
+  - SockJS를 통해 버전이 낮은 브라우저 연동 가능
 
+### STOMP(Simple Text Oriented Messaging Protocol)
+- 간단하고 가벼운 텍스트 기반의 프로토콜
 > WebSocketConfigurer
 
 - configureMessageBroker
   - pub/sub
     - sub: channel 연결
     - pub: 연결한 channel로 메세지 전송
-- registerStompEndpoints
-  - 웹소켓 엔드포인트를 `url:port/channel`로 정의
-  - CORS 설정 가능
-  - SockJS를 통해 버전이 낮은 브라우저 연동 가능
-
-
-### STOMP(Simple Text Oriented Messaging Protocol)
-- 간단하고 가벼운 텍스트 기반의 프로토콜
