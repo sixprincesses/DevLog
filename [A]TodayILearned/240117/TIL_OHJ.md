@@ -53,10 +53,3 @@ const response = await fetch("http://70.12.247.83:8080/member/1", {
 - headers의 default는 application/json이다.
 - json과 file은 multipart/form-data를 활용하자.
 
-## 개인적으로 느낀 점
-- axios 요청 보낼 때 
-    - header에  application/json, multipart/form-data 이 2개 구분도 못했다는 점에 놀람 -> 기본기 실화?
-    - body에 요청 보낼 때 key: value 형식 말고 그냥 value만 넣어서 보내는 경우는 어떤 경우인가? 단 하나의 value만 보낼 때인가?
-- 챗지피티한테 뇌대리 맡기기?
-    - 머리 쓰기 싫어질 때 챗지피티한테 뇌대리 맡기고 아무 생각도 안하려고 하는 자기방어기제적 습관이 있는데 이건 죽어도 고쳐야함.
-    - 하나하나 논리 따져가는 게 없다보니 전체를 챗지피티한테 맡겨버리는 거임. 그러니까 정욱이처럼 필요한 부분 구글 서치를 못하는 거임.
