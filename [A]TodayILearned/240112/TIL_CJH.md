@@ -26,9 +26,6 @@
 4. 스레드 안정성
     - 스레드 안전성을 보장
 
-### STOMP(Simple Text Oriented Messaging Protocol)
-- 간단하고 가벼운 텍스트 기반의 프로토콜
-
 ### [DOCKER] REDIS
 ```
 docker run -d --name redis-container \
