@@ -6,6 +6,8 @@
 
 `extends BaseEntity`를 통해 Entity에 상속
 
+3. Backend Package Architecture
+
 ```java
 @Getter
 @MappedSuperclass
