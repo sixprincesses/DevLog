@@ -3,7 +3,7 @@
 ## 타이머 추가 설계
 - 시간, 분 타이머가 59초에서 00초로 넘어갈 때가 아니라 00초에서 01초로 넘어갈 때 flip 된다는 점이 문제
     - seconds를 dependancy로 하는 useEffect 활용, 초가 58초일 때 setTimeout -> 1초 후에 flip 되도록 하는 로직 구현
-```
+```javascript
 useEffect(() => {
     if (minutes === 59 && seconds === 58) {
     setTimeout(()=> {
@@ -29,7 +29,7 @@ useEffect(() => {
     - 한꺼번에 json으로 묶어 보내는 **415에러** 발생했었음
 
 > 해결 코드
-```
+```javascript
 const formData = new FormData();
 const jsonData = {
           nickname: values.nickname,
