@@ -18,3 +18,38 @@ public abstract class BaseEntity {
     private LocalDateTime updateTime;
 }
 ```
+
+```
+\---server
+    +---global
+    |   +---config
+    |   |       WebsocketConfig.java
+    |   |
+    |   +---domain
+    |   |       Data1BaseEntity.java
+    |   |       Data2BaseEntity.java
+    |   |
+    |   \---exception
+    \---project
+        +---client
+        |       AuthenticationClient.java
+        |       GithubClient.java
+        |       StorageClient.java
+        |
+        +---controller
+        +---data
+        |   +---request
+        |   |       DataRequest.java
+        |   |
+        |   +---response
+        |   |       DataResponse.java
+        |   |
+        |   \---vo
+        |           DataVO.java
+        |
+        +---repository
+        \---service
+                DataLoadService.java
+                DataSaveService.java
+                DataService.java
+```
