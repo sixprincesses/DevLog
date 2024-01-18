@@ -4,6 +4,8 @@
 
 2. BaseEntity를 통해 각 Entity의 공통 feature를 관리할 수 있다
 
+`extends BaseEntity`를 통해 Entity에 상속
+
 ```java
 @Getter
 @MappedSuperclass
