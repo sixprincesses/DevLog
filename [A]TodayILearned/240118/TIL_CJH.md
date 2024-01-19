@@ -49,6 +49,7 @@ public abstract class BaseEntity {
         |   \---vo
         |           DataVO.java
         |
+        +---domain
         +---repository
         \---service
                 DataLoadService.java
