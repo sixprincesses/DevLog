@@ -17,11 +17,11 @@
 
 > TOPIC 생성
 
-sh ./bin/kafka-topics.sh --create --topic TOPICNAME --bootstrap-server localhost:9092
+`sh ./bin/kafka-topics.sh --create --topic TOPICNAME --bootstrap-server localhost:9092`
 
 > 현재 TOPIC 조회
 
-sh ./bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+`sh ./bin/kafka-topics.sh --list --bootstrap-server localhost:9092`
 
 > TOPIC 상세조회
 
