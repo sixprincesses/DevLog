@@ -12,7 +12,12 @@
 
 > 실행
 
+1. zookeeper 실행
+
 `bin\windows\zookeeper-server-start.bat config\zookeeper.properties`
+
+2. kafka 실행
+   
 `bin\windows\kafka-server-start.bat config\server.properties`
 
 > TOPIC 생성
