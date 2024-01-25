@@ -173,3 +173,66 @@ Kafka가 설치되어 있는 서버 단위를 말합니다. 보통 3개 이상�
 Producer가 data를 보내면 Partitioner를 통해서 Broker로 전송됩니다
 
 Partitioner는 어떤 Partition에 넣을지 결정합니다
+
+## 5. 실습(Docker 활용)
+
+```yaml
+version: "3" # docker-compose 버전 지정
+services:
+  zookeeper:
+    image: wurstmeister/zookeeper
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+  kafka:
+    image: wurstmeister/kafka
+    container_name: kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: 127.0.0.1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181 # kafka가 zookeeper에 커넥션하기 위한 대상을 지정
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - zookeeper
+```
+
+```shell
+# Kafka 접속
+docker exec -it <컨테이너> bash
+
+# Kafka 버전 확인
+kafka-topics.sh --version 
+
+## Result ---> 2.8.1 (Commit:839b886f9b732b15)
+
+# 토픽 생성
+kafka-topics.sh --create \
+--topic sample_topic_1 \
+--bootstrap-server localhost:9092 \
+--replication-factor 1 \
+--partitions 1
+
+## Result ---> Created topic sample_topic_1.
+
+# 토픽 목록 조회
+kafka-topics.sh --list --bootstrap-server localhost:9092
+
+## Result ---> sample_topic_1
+
+# 토픽 삭제
+kafka-topics.sh --delete \
+--topic sample_topic_1 \
+--bootstrap-server localhost:9092
+
+# Producer
+kafka-console-producer.sh \
+--broker-list localhost:9092 \
+--topic test_topic
+
+# Consumer
+kafka-console-consumer.sh \
+--bootstrap-server localhost:9092 \
+--topic test_topic
+```
